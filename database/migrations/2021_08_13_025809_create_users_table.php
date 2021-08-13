@@ -27,6 +27,7 @@ class CreateUsersTable extends Migration
             $table->unsignedBigInteger('cities_departments_id');
             $table->foreign('cities_id','departments_id')->references('id')->on('cities','departments');
             $table->timestamps();
+            
         });
     }
 
